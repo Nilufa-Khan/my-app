@@ -6,6 +6,7 @@ function App() {
   return (
     <>
    <nav className="navbar">
+    
     <li>Home</li>
     <li>About</li>
     <li>Contact</li>
