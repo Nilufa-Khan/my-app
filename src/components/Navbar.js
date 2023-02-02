@@ -28,12 +28,15 @@ export default function Navbar(props) {
   </nav>
   )
 }
+//proptypes
 Navbar.propTypes = {
     aboutText:PropTypes.string.isRequired // if inside app.js if by mistakenly entered property value as number or
                               // anything other than string then it will show error, always it is a good practice
                              // it acts like a check 
 }
 
+
+//default proptypes
 //default props means in app.js if i dont pass value then it will use deafult props value
 Navbar.defaultProps ={
     aboutText:'Default about'
