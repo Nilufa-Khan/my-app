@@ -7,12 +7,14 @@ export default function TextForm(props) {
 // setText("new text"); // Correct way to change the state
 
 const handleUpClick = ()=>{
-  console.log("Uppercase was clicked"+text);
+  // console.log("Uppercase was clicked"+text);
+
   let newText = text.toUpperCase();
   setText(newText)
   }
   const handleOnChange = (event)=>{
-  console.log("On change");
+  // console.log("On change");
+  
   setText(event.target.value);
   }
   
