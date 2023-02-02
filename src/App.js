@@ -7,7 +7,8 @@ let name = "Nilufa";
 function App() {
   return (
     <>
-    <Navbar/>
+    <Navbar aboutText="AboutTextUtils" / >
+    <Navbar / >
   </>
   );
 }
