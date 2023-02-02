@@ -43,6 +43,7 @@ const handleUpClick = ()=>{
     
     <div className="container  my-4">
       <h3>Yor text Summary: </h3>
+      
       <p>{text.split(" ").length} words and {text.length} characters</p>
       <p>Average {0.08 * text.split(" ").length} Minutes take time to Read</p>
     </div>
