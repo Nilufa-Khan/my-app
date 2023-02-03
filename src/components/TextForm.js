@@ -16,6 +16,15 @@ const handleUpClick = ()=>{
     let lowText = text.toLowerCase();
     setText(lowText);
   }
+  const handleCopy =()=>{
+    var copy = document.getElementById("myBox");
+    copy.select();
+    navigator.clipboard.writeText(copy.value);
+  }
+  const handleExtraSpaces = () => {
+    let newText = text.split(/[ ]+/);
+    setText (newText.join(" "))
+    }
 
   const handleClearClick =()=>{
     let lowText ='';
@@ -40,6 +49,8 @@ const handleUpClick = ()=>{
     <button type="submit" className="btn btn-primary mb-5 mx-1" onClick={handleUpClick}>Convert To UpperCase</button>
     <button type="submit" className="btn btn-primary mb-5 mx-1" onClick={handleLowClick}>Convert To LowerCase</button>
     <button type="submit" className="btn btn-primary mb-5 mx-1" onClick={handleClearClick}>Clear</button>
+    <button type="submit" className="btn btn-primary mb-5 mx-1" onClick={handleCopy}>Copy Text</button> 
+    <button type="submit" className="btn btn-primary mb-5 mx-1" onClick={handleExtraSpaces}>Remove Extra Space</button> 
     
     <div className="container  my-4">
       <h3>Yor text Summary: </h3>
