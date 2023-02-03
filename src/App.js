@@ -8,6 +8,7 @@ let name = "Nilufa";
 
 function App() {
   return (
+    
     <>
     <Navbar aboutText="About" / >
     {/* <Navbar / > */}
