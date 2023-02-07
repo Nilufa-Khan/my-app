@@ -20,6 +20,7 @@ const toggle = ()=>{
         })
         setBtnText("Enable Dark Mode")
     }
+    
     else{
         setMyStyle({
             color:'black',
