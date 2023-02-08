@@ -6,6 +6,13 @@ import Alert from './components/Alert';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 let name = "Nilufa";
 
 function App() {
@@ -35,19 +42,30 @@ function App() {
   }
   }
   return (
-
+    <Router>
     <>
+  
     <Navbar aboutText="About" mode={mode} toggle={toggle} />
     {/* <Navbar / > */}
     <Alert alert= {alert}/>
-    <div className="container my-4" >
-    <TextForm title="Enter text to analyze" mode={mode} showAlert = {showAlert}/>
+    <div className="container my-3" >
+    <Switch>
+          <Route path="/about">
+            <About />
+          </Route>
+          
+          <Route path="/">
+          <TextForm title="Enter text to analyze" mode={mode} showAlert = {showAlert}/>
+    
+          </Route>
+        </Switch>
     {/* <About/> */}
     </div>
    
    
     
   </>
+  </Router>
   );
 }
 
